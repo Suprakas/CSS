@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+.container{
+    background-color: var(--seccolor);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: var(--defpad);
+    margin: 10px;
+}
+ul li:nth-child(3) {
+    --color: rgb(183, 140, 30);
+background-color: var(--color);
+}
+ul li:nth-child(2) {
+    
+border: 2px solid var(--seccolor);
+}
+ul li:nth-child(1) {
+    
+    border: 2px solid var(--seccolor,red); /*In case sec-color global variable a declare na thakle color red hbe*/
+    }
+
+:root{
+    --color: rgb(255, 0, 128);
+    --seccolor: rgb(137, 201, 98);
+    --defpad:23px;
+}

@@ -1,0 +1,46 @@
+.container{
+background-color: rgb(19, 86, 86);
+height: 80vh;
+width: 30vw;
+}
+.box{
+height: 25vh;
+width: 15vw;
+animation: newanimation;
+animation-duration: 10s;
+animation-iteration-count: 3;
+animation-timing-function: cubic-bezier(1,-0.37, 0, 1.28);
+animation-delay: 1s;
+animation-direction: alternate-reverse;
+animation: newanimation 10s cubic-bezier(1,-0.37, 0, 1.28) 1s 3 alternate-reverse;
+}
+.box1{
+    animation: new2 10s ease-in 1s 3 alternate-reverse;
+    background-color: red;
+    height: 20vh;
+    width: 10vw;
+}
+@keyframes newanimation
+{
+    from{
+background-color: blue;
+    }
+    to{
+        background-color: blueviolet;
+        transform: translateX(1000px);
+    }
+}
+@keyframes new2{
+    o%{
+        transform: rotate(100deg);
+    }
+    25%{
+        transform: rotate(170deg);
+    }
+    50%{
+        transform: rotate(250deg);
+    }
+    75%{
+        transform: rotate(310deg);
+    }
+}

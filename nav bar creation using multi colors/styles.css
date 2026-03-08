@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color:rgb(22, 172, 87);
+    --secondary-color:rgb(19, 105, 105);
+    --text-color:rgb(240, 225, 225);
+}
+body{
+    background-color: var(--primary-color);
+}
+/* ul{
+    display: flex; -> evabeo navigation bar toiri kora jabe, either display:inline koro ba ul er display : flex koro.
+} */
+ul li{
+    display: inline;
+    list-style: none;
+    padding: 23px;
+    font-weight: 400;
+}
+ul li a{
+    color: var(--text-color);
+    text-decoration: none; /* hyperlink theke _ ata uthe jabe. */
+}
+a:hover{
+background-color: azure;
+color: cyan;
+}
+.nav{
+background-color: var(--secondary-color);
+padding: 12px 0;
+}
+
